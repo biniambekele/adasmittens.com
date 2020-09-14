@@ -1,0 +1,120 @@
+body {
+  color: #444;
+  font-family: "Work Sans",sans-serif;
+  font-size: 21px;
+  max-width: 1200px;
+  margin: 1rem 1rem 0 1rem;
+  padding: 0;
+}
+
+button,
+h1,
+h2,
+input[type='button'],
+input[type='submit'],
+label {
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  margin: 0 0 1.5rem 0;
+}
+
+h1 img {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+h2 {
+  color: #3e88af;
+  font-size: 1.5rem;
+  margin: 1.8rem 0 1rem 0;
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+strong {
+  color: #666;
+  font-weight: 600;
+}
+
+.contact {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.contact__header {
+  width: 100%;
+}
+
+.contact__form {
+  display: grid;
+  flex-grow: 1;
+  grid-template-rows: auto 1fr auto;
+  margin: 0 1rem 1rem 1rem;
+  min-width: 300px;
+}
+
+.contact__aside {
+  background: url('../img/ada.jpg') no-repeat center center;
+  background-size: cover;
+  flex: 1 0 auto;
+  height: 290px;
+  min-width: min(100%, 400px);
+}
+
+.contact__email,
+.contact__message {
+  background-color: #fafafa;
+  border: 1px solid #444;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.contact__label--expand {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contact__message {
+  flex: 1;
+}
+
+.contact__send {
+  border: 1px solid #444;
+  border-radius: 3px;
+  color: #3e88af;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem 0.4rem 1rem;
+}
+
+@media (min-width: 900px) {
+  body {
+    margin: 3rem 3rem 2rem 3rem;
+  }
+
+  .contact {
+    margin-left: -3rem;
+    margin-right: -3rem;
+  }
+
+  .contact__form {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="We collect children's singles and pairs of mittens to donate to children in need." />
+  <meta name="keywords" content="toronto charity, donate mittens, help children in need" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+  <title>Ada's Mittens</title>
+  <script type="text/javascript">
+    window.addEventListener('load', function () {
+      // Try to prevent this email address from being harvested.
+      document.querySelector('.contact__form').addEventListener('submit', function (event) {
+        const domain = 'adasmittens.com';
+        event.target.action = 'https://formspree.io/contactform' + '@' + domain;
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <h1 class="header"><a href="/"><img src="img/logo.png" alt="Ada's Mittens"></a></h1>
+
+  <main class="main">
+    <h2>Kids keeping kids warm!</h2>
+
+    <p><strong>We collect singles and pairs of mittens in the Toronto area to donate to children in need.</strong></p>
+
+    <p>Ada’s Mittens was sparked from the fact that Ada never brought home more than one mitten each day during her first year of
+      school.
+      After scouring her classroom and the school’s lost and found, we concluded that the other mittens must have been pulled into a black
+      hole.
+      We held onto the lonely survivors hoping that their solemates would eventually turn up. Alas, a happy reunion was
+      not to be.
+      Realizing that other parents must be in the same boat, and seeing a sea of lonely mittens in the lost and found,
+      we
+      decided to ask if anyone wanted to donate their mittens rather than sending them to the landfill.</p>
+
+    <p>If you are interested in donating singles or pairs of mittens to Ada's Mittens, or if you could use warm mittens
+      for
+      your school, charity, or your own family, then please contact us below.</p>
+  </main>
+
+  <section class="contact">
+    <form method="POST" class="contact__form">
+      <h2 class="contact__header">Contact Us!</h2>
+
+      <input type="hidden" name="_format" value="plain" />
+      <input type="text" name="_gotcha" style="display:none" aria-hidden="true" />
+      <input type="hidden" name="_next" value="/email-sent.html" />
+      <input type="hidden" name="_subject" value="Ada's Mittens Contact Form" />
+
+      <p>
+        <label class="contact__label">E-mail address
+          <input type="email" name="_replyto" class="contact__email" required>
+        </label>
+      </p>
+
+      <p>
+        <label class="contact__label contact__label--expand">Message
+          <textarea name="message" class="contact__message" rows="4" required></textarea>
+        </label>
+      </p>
+
+      <p>
+        <input type="submit" value="Send" class="contact__send">
+      </p>
+    </form>
+
+    <aside class="contact__aside"></aside>
+  </section>
+</body>
+
+</html>
